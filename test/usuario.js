@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 var supertest = require('supertest')
 var should = require('should')
 var mongoHost = process.env.DBHOST || 'mongodb://localhost:27017/api-banking';

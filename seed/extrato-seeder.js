@@ -1,7 +1,7 @@
 const consign = require('consign');
 const express = require('express');
 const path = require('path');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const mongoHost = process.env.DBHOST || 'mongodb://localhost:27017/api-banking';
 
 const app = express();
@@ -17,7 +17,7 @@ var mongoose = require('mongoose')
 
 mongoose.connect(mongoHost)
 
-novosExtratos("12312312312",
+novosExtratos("34534534534",
 {
     tpTransacao: "debito",
     dtTransacao: "2018-12-09T18:19:21.541+0000",
@@ -29,7 +29,7 @@ novosExtratos("12312312312",
     observacao: "Emprestimo de novembro"
 })
 
-novosExtratos("56756756756",
+novosExtratos("34534534534",
 {
     tpTransacao: "credito",
     dtTransacao: "2018-12-09T18:19:22.541+0000",
@@ -53,7 +53,7 @@ novosExtratos("34534534534",
     observacao: "Parcela do carro"
 })
 
-novosExtratos("67867867867",
+novosExtratos("34534534534",
 {
     tpTransacao: "credito",
     dtTransacao: "2018-12-09T18:22:35.541+0000",

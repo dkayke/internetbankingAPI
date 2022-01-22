@@ -1,7 +1,7 @@
 const consign = require('consign');
 const express = require('express');
 const path = require('path');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const mongoHost = process.env.DBHOST || 'mongodb://localhost:27017/api-banking';
 
 const app = express();

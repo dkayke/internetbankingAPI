@@ -1,7 +1,7 @@
 module.exports = (app) => {
     const jwt = require('jsonwebtoken');
     const { usuario, Conta } = app.models;
-    const bcrypt = require('bcrypt');
+    const bcrypt = require('bcryptjs');
     const { logs, retorno } = app.middlewares;
 
     const usuarioService = {
